@@ -5,7 +5,7 @@ h1{
     color: #100C17;
     
 }
-.question{
+.ask{
     text-align: center;
     font-family: 'Signika', sans-serif;
     color: #100C17;
@@ -15,17 +15,16 @@ h1{
     text-align: center;
     font-size: 3em;
 }
-.col-lg-6{
+.btn-lg, .btn-group-lg > .btn{
     border-color: #100C17;
     border-style: solid;
     border-width: 2px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.col-lg-6:hover{
+.btn-lg, .btn-group-lg > .btn:hover{
     background: #332F3A;
-    color: #9C94AA;
     transition: 0.5s;
-    transition-delay: 150ms;
+    transition-delay: 100ms;
     transition-duration: 0.5s;
     transition-timing-function: linear;
     cursor: pointer;

@@ -12,30 +12,21 @@
 
 <body>
     <h1>Quizz</h1>
-   
-    <div id="quizzContainer"class="container-fluid">
-       <div class="question">Question:</div>
-       <div id="question">Question Lorem</div>
-        <div class="row">
-            <div class="col-lg-6" id="choice1">lorem ispum</div>
-            <div class="col-lg-6" id="choice2">dolor</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6" id="choice3">lorem</div>
-            <div class="col-lg-6" id="choice4">ipsum</div>
+
+    <div id="quizzContainer" class="container-fluid">
+        <div class="question">Question:</div>
+        <div id="ask"></div>
+        <div class="quiz" id="quiz" data-toggle="buttons">
+           <label class="btn btn-lg btn-primary btn-block"><span id="choice1"></span> <input type="radio" name="q_answer" value="1"></label>
+           <label class="btn btn-lg btn-primary btn-block"><span id="choice2"></span> <input type="radio" name="q_answer" value="2"></label>
+           <label class="btn btn-lg btn-primary btn-block"><span id="choice3"></span> <input type="radio" name="q_answer" value="3"></label>
+           <label class="btn btn-lg btn-primary btn-block"><span id="choice4"></span> <input type="radio" name="q_answer" value="4"></label>
+       </div>
+                <button id="next" onclick="loadNextQ()">Suivant</button>
             </div>
-            <div class="row">
-            <div class="col-lg-4">
-            <button id="previous" onclck="loadPreviousQ()">Précédent</button>
-                </div>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4">
-            <button id="next" onclick="loadNextQ()">Suivant</button>
-                </div>
-        </div>
-        </div>
-<script src="assets/js/questions.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/question.js"></script>
+
 </body>
 
 </html>
