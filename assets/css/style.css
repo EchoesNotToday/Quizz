@@ -30,3 +30,12 @@ h1{
     cursor: pointer;
     border-radius: 2em 2em;
 }
+.btn-primary{
+    background: #332F3A;
+    transition: 0.5s;
+    transition-delay: 100ms;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    cursor: pointer;
+    
+}

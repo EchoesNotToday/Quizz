@@ -14,18 +14,18 @@
     <h1>Quizz</h1>
 
     <div id="quizzContainer" class="container-fluid">
-        <div class="question">Question:</div>
         <div id="ask"></div>
         <div class="quiz" id="quiz" data-toggle="buttons">
-           <label class="btn btn-lg btn-primary btn-block"><span id="choice1"></span> <input type="radio" name="q_answer" value="1"></label>
-           <label class="btn btn-lg btn-primary btn-block"><span id="choice2"></span> <input type="radio" name="q_answer" value="2"></label>
-           <label class="btn btn-lg btn-primary btn-block"><span id="choice3"></span> <input type="radio" name="q_answer" value="3"></label>
-           <label class="btn btn-lg btn-primary btn-block"><span id="choice4"></span> <input type="radio" name="q_answer" value="4"></label>
-       </div>
-                <button id="next" onclick="loadNextQ()">Suivant</button>
-            </div>
+            <label class="btn btn-lg btn-primary btn-block" id="choice1" ><input onclick="checkAnswer" type="radio" name="q_answer" value="1"></label>
+            <label class="btn btn-lg btn-primary btn-block" id="choice2"><input type="radio" name="q_answer" value="2"></label>
+            <label class="btn btn-lg btn-primary btn-block" id="choice3"><input type="radio" name="q_answer" value="3"></label>
+            <label class="btn btn-lg btn-primary btn-block" id="choice4"><input type="radio" name="q_answer" value="4"></label>
+        </div>
+        <button id="previous" class="btn btn-primary" onclick="loadPreviousQ()">Précédent</button>
+        <button id="next" class="btn btn-primary" onclick="loadNextQ()">Suivant</button>
+        
+    </div>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/question.js"></script>
 
 </body>
 
