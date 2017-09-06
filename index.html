@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Signika:600" rel="stylesheet">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <h1>Quizz</h1>
+   
+    <div id="quizzContainer"class="container-fluid">
+       <div class="question">Question:</div>
+       <div id="question">Question Lorem</div>
+        <div class="row">
+            <div class="col-lg-6" id="choice1">lorem ispum</div>
+            <div class="col-lg-6" id="choice2">dolor</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="choice3">lorem</div>
+            <div class="col-lg-6" id="choice4">ipsum</div>
+            </div>
+            <div class="row">
+            <div class="col-lg-4">
+            <button id="previous" onclck="loadPreviousQ()">Précédent</button>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+            <button id="next" onclick="loadNextQ()">Suivant</button>
+                </div>
+        </div>
+        </div>
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
